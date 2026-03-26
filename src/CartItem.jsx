@@ -11,7 +11,7 @@ const CartItem = ({ onContinueShopping }) => {
   const calculateTotalAmount = () => {
   let total = 0;
   cart.forEach(item => {
-    const cost = parseFloat(item.cost.toString().replace('$', '')); // якщо $ нема — нічого страшного
+    const cost = parseFloat(item.cost.toString().replace('$', '')); 
     total += cost * item.quantity;
   });
   return total;
